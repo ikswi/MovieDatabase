@@ -12,6 +12,7 @@ namespace MovieWebApplication.Controllers;
 [Route("api/[controller]")]
 public class MoviesController : ControllerBase
 {
+
     private readonly ApplicationDbContext _context;
 
     public MoviesController(ApplicationDbContext context)

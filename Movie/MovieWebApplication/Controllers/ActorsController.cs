@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using MovieWebApplication.Data;
 using MovieWebApplication.Models;
@@ -8,6 +9,7 @@ using System.Threading.Tasks;
 
 namespace MovieWebApplication.Controllers;
 
+[Authorize]
 [ApiController]
 [Route("api/[controller]")]
 public class ActorsController : ControllerBase
